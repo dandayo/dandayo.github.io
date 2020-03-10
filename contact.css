@@ -1,0 +1,40 @@
+body {
+    background-image: url(background.jpg);
+}
+
+.navbar.navbar-expand-md.navbar-dark {
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.btn.my-2.my-sm-0 {
+    color: white;
+    background-clip: padding-box;
+    background-color: blueviolet;
+    background-clip: padding-box;
+    border-style: outset;
+    border-color: blueviolet;
+    border-radius: 2px;
+    font-weight: bold;
+    border-width: 3px;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+ }
+
+.col-6.mt-5.pt-5 h1 {
+    color: blueviolet;
+}
+
+.container-fluid.text-light.pl-5 {
+    text-shadow: 3px 3px black;
+}
+
+.navbar.fixed-bottom.navbar-expand-sm.navbar-dark {
+    background-color: rgba(0, 0, 0, 0.603);
+}
