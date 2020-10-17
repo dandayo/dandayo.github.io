@@ -1,111 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Musei</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/cards.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-    <div id="conteiner">
-
-        <header class="header">
-            <nav>
-                <div class="logo">
-                    <img src="img/logo1.png" width="70%">
-                </div>
-                <div class="musei">
-                    <p>Ковдорский краеведческий музей</p>
-                </div>
-
-                <ul>
-                    <li><a href="#">Афиша</a></li>
-                    <li><a href="#">Посетителям</a></li>
-                    <li><a href="#">О музее</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Поиск</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="name">
-            <h1>Ковдорский краеведческий музей</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ковдорский краеведческий музей</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS\normalize.css" />
+    <link rel="stylesheet" href="CSS\slides.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <h2 class="header-text">Ковдорский краеведческий музей</h2>
+        <div class="buttons">
+          <button class="button button-primary">
+            <span class="button-text">Главная</span>
+          </button>
+          <button class="button">
+            <span class="button-text">Афиша</span>
+          </button>
+          <button class="button">
+            <span class="button-text">Посетителям</span>
+          </button>
+          <button class="button">
+            <span class="button-text">О музее</span>
+          </button>
+          <button class="button">
+            <span class="button-text">Блог</span>
+          </button>
         </div>
-        <div class="content">
-            <div class="cards">
-                <div class="card-1">
-                    <div class="img-cards">
-                        <img src="img/Wq2uLEmBAfc.jpg" alt="" class="img1">
-                    </div>
-                    <p>Какой-то текст</p>
+      </header>
 
-                </div>
-                <div class="card-2">
-                    <div class="img-cards">
-                        <img src="img/Wq2uLEmBAfc.jpg" alt="" class="img2">
-                    </div>
-                    <p>Какой-то текст</p>
+      <section class="promo">
+        <ul id="slides">
+          <li class="slide showing"><h1 class="promo-title">Сегодня, 17 октября:</h1></li>
+          <li class="slide"><h1 class="promo-title">Завтра, 18 октября:</h1></li>
+          <li class="slide"><h1 class="promo-title">Послезавтра, 19 октября:</h1></li>
+          <li class="slide"><h1 class="promo-title">Вчера, 16 октября:</h1></li>
+          <li class="slide"><h1 class="promo-title">В этом месяце:</h1></li>
+        </ul>
 
-                </div>
-                <div class="card-3">
-                    <div class="img-cards">
-                        <img src="img/Wq2uLEmBAfc.jpg" alt="" class="img3">
-                    </div>
-                    <p>Какой-то текст</p>
+      </section>
 
+      <div class="exhibition">
+        <section class="exhibition">
+          <h2 class="afisha">Афиша</h2>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="img/img1.jpg"
+                alt="image"
+                class="card-img"
+                width="400px"
+                height="300px"
+              />
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title">
+                    История гражданской обороны Кольского Севера
+                  </h3>
                 </div>
+                <div class="date">
+                  <p>6 октября - 30 ноября</p>
+                </div>
+                <div class="card-info">
+                  <p>
+                    В Ковдорском краеведческом музее начинает работу выставка
+                    «История гражданской обороны Кольского Севера». Это
+                    передвижная выставка Мурманского областного краеведческого
+                    музея, на которой собраны фотографии, отображающие хронику
+                    истории становления и развития гражданской обороны в
+                    Мурманской области.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="main">
-                <div class="maincontent">
-
-                    <div class="info">
-                        <h2>События</h2>
-
-
-
-
-
-                    </div>
-
+            <div class="card">
+              <img
+                src="img/img2.jpg"
+                alt="image"
+                class="card-img"
+                width="400px"
+                height="300px"
+              />
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title">Природа полуострова Рыбачий</h3>
                 </div>
-
-
-
-
+                <div class="date">
+                  <p>6 октября - 30 ноября</p>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="card">
+              <img
+                src="img/img3.jpg"
+                alt="image"
+                class="card-img"
+                width="400px"
+                height="300px"
+                ;
+              />
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title">Наша вторая</h3>
+                </div>
+                <div class="date">
+                  <p>6 октября - 30 ноября</p>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/img1.jpg" alt="image" class="card-img" width="400px" height="300px" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title">
+                    История гражданской обороны Кольского Севера
+                  </h3>
+                </div>
+                <div class="date">
+                  <p>6 октября - 30 ноября</p>
+                </div>
+                <div class="card-info">
+                  <p>
+                    В Ковдорском краеведческом музее начинает работу выставка
+                    «История гражданской обороны Кольского Севера». Это
+                    передвижная выставка Мурманского областного краеведческого
+                    музея, на которой собраны фотографии, отображающие хронику
+                    истории становления и развития гражданской обороны в
+                    Мурманской области.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/img2.jpg" alt="image" class="card-img" width="400px" height="300px" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title">Природа полуострова Рыбачий</h3>
+                </div>
+                <div class="date">
+                  <p>6 октября - 30 ноября</p>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/img3.jpg" alt="image" class="card-img" width="400px" height="300px" ; />
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title">Наша вторая</h3>
+                </div>
+                <div class="date">
+                  <p>6 октября - 30 ноября</p>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
+      <section class="blog">
+        <h2 class="blogh2">Блог</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="img/sova.jpg"
+              alt="image"
+              class="card-img"
+              width="400px"
+            />
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Природа полуострова Рыбачий</h3>
+              </div>
+              <div class="card-info">
+                <p>
+                  В Ковдорском краеведческом музее начинает работу выставка
+                  «Природа полуострова Рыбачий».
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/sova.jpg"
+              alt="image"
+              class="card-img"
+              width="400px"
+            />
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Pizza plus</h3>
+              </div>
+              <div class="card-info">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/sova.jpg"
+              alt="image"
+              class="card-img"
+              width="400px"
+            />
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Pizza plus</h3>
+              </div>
+              <div class="card-info">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="time">
-            <p>ЧАСЫ РАБОТЫ</p>
-            <p>Загляните к нам</p>
-            <p>ПН–ПТ: 9:00–18:00</p>
-            <p>СБ: 10:00–14:00</p>
-            <p> ВС: выходной</p>
+      <div class="map">
+<script type="text/javascript" charset="utf-8" async
+  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa2dde522e2c3f09b983c3b7bebd631b47dab8d89905eb19e47905c5840762ad7&amp;width=1200&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+
+      <div class="time">  
+        <div class="time-text"><h5>ЧАСЫ РАБОТЫ</h5>
+        <p>ПН: неприемный день для просмотра экспозиций. Работа с фондами и управленческой документацией. </p>
+        <p>ВТ–ЧТ: 9:00–17:00</p>
+        <p>ПТ: 9:00–14:30</p>
+        <p>СБ: 11:00–16:30</p>
+        <p>ВС: выходной</p>
+      </div>  
+
+      </div>
 
 
+     
+    </div>
+    <footer class="footer">
+      <div class="footer-block">
+        <img src="img/logo.png" alt="logo" width="80px" />
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Посетителям</a>
+          <a href="#" class="footer-link">О музее</a>
+          <a href="#" class="footer-link">Пресс-центр</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </nav>
+        <div class="social-links">
+          <a href="" class="social-link"><img src="img/inst.svg" alt="instagram" /></a>
+          <a href="" class="social-link"><img src="img/fb.svg" alt="facebook" /></a>
+          <a href="" class="social-link"><img src="img/vk.svg" alt="vk" /></a>
         </div>
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-    </div>
-    </div>
-</body>
-
+      </div>
+      </div>
+    </footer>
+    <script src="/js/promo.js"></script>
+  </body>
 </html>

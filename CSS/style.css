@@ -1,243 +1,200 @@
-.name {
-  grid-area: name;
-}
-.card-1 {
-  grid-area: card-1;
-}
-.card-2 {
-  grid-area: card-2;
-}
-.card-3 {
-  grid-area: card-3;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-image: url("../img/musei.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  padding-top: 44px;
 }
 
-#conteiner {
-  width: 100%;
+.afisha,
+.blogh2 {
+  padding: 20px 10px 30px 20px;
 }
 
-.musei {
-  font-size: 18px;
-}
-
-nav {
-  display: flex;
-  height: 120px;
-  width: 100%;
-  background: beige;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
-}
-nav .logo {
-  padding: 0px;
-  margin: 0px;
-  width: 150px;
-}
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-nav ul li {
-  margin: 0 5px;
-}
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-bottom: 4px solid #faca64;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
   border-radius: 2px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-nav ul li a.active,
-nav ul li a:hover {
-  color: #111;
-  background: #faca64;
-}
-nav .menu-btn i {
-  color: #faca64;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"] {
-  display: none;
 }
 
-.content {
+.header {
   display: flex;
-  flex-direction: column;
-  margin-top: 550px;
-  position: relative;
-  min-width: 100%;
-  min-height: 100%;
-  position: relative;
-  justify-content: center;
-  box-sizing: content-box;
-  height: 400px;
-  max-width: 900px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.name {
-  padding-top: 75px;
+.logo {
+  width: 100px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 55px;
-  margin-top: 175px;
-  color: #d2debd;
+.header-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1.5px solid #fff1b8;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+  background-color: #fff1b8;
+}
+
+.button-primary {
+  background-color: #fff1b8;
+}
+
+.button-text {
+  vertical-align: middle;
+}
+
+.promo {
+  background: #fff1b8;
+  border-radius: 10px;
+  vertical-align: middle;
+  padding: 68px 70px;
+  margin-bottom: 56px;
+}
+
+.promo-title {
+  max-width: 538px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.musei-img {
+  width: 500px;
+  margin: 10px;
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  border-radius: 10px;
 }
 
 .cards {
-  padding-top: 15%;
   display: flex;
-  height: 120px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  text-align: center;
 }
 
-.img-cards {
-  text-align: center;
-}
-.card-1 {
-  background-color: rgb(18, 101, 174);
-  width: 33.3%;
-  height: 300px;
-  text-align: center;
-}
-
-.card-1 p {
-  text-align: center;
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  max-width: 31%;
+  max-height: 600px;
+  margin-right: -10px;
+  cursor: pointer;
 }
 
-.card-2 {
-  background-color: beige;
-  width: 33.4%;
-  height: 300px;
+.card-image {
+  max-height: 200px;
 }
 
-.card-2 p {
-  text-align: center;
+.card-text {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding-left: 23px;
+  padding-right: 23px;
+  height: 355px;
 }
 
-.card-3 {
-  background-color: beige;
-  width: 33.3%;
-  height: 300px;
+.card-info {
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  padding: 5px; /* Поля вокруг текста */
+  text-overflow: ellipsis;
 }
 
-.card-3 p {
-  text-align: center;
-}
-
-.main {
+.card-heading {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
 }
 
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 60px;
-  height: 85px;
-  background-color: beige;
-}
-
-h2 {
-}
-
-.maincontent {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: center;
-  padding-top: 300px;
+.card-title {
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .time {
   display: flex;
-  flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.time-text {
   text-align: center;
-
-  padding-top: 345px;
+  width: 400px;
+  font-size: 15px;
+  line-height: 32px;
 }
 
-.time p {
-  height: 40px;
-  background-color: beige;
+.footer {
+  padding: 70px;
+  background-color: #fbf6e1;
+  height: 180px;
 }
 
-@media (max-width: 1000px) {
-  nav {
-    padding: 0 40px 0 50px;
-  }
+.footer-nav {
+  margin-left: 35px;
+  margin-right: auto;
 }
 
-@media (max-width: 920px) {
-  nav .logo {
-    display: none;
-  }
-  nav .menu-btn i {
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  nav ul {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #f0b881a7;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul {
-    left: 0;
-  }
-  nav ul li {
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a {
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a {
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover {
-    background: none;
-    color: azure;
-  }
+.footer-link {
+  display: inline-block;
+  color: #595959;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 21px;
 }
